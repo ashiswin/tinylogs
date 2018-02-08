@@ -49,7 +49,7 @@
 	<div class="container-fluid" style="margin-top: 2%">
 		<div class="row">
 			<div class="col-md-8">
-				<h1>Total line items: </h1><span id="txtItems"></span>
+				<h1 id="txtItems">Total line items: </h1>
 			</div>
 			<div class="col-md-4">
 				<button id="btnAddItem" class="btn btn-primary float-right"><i class="fa fa-plus"></i> Add item</button>
@@ -109,7 +109,7 @@
 					}
 					
 					$("#tblItems").html(tblItems);
-					$("#txtItems").html(response.items.length);
+					$("#txtItems").html("Total line items: " + response.items.length);
 				}
 			});
 		});
