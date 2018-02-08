@@ -35,6 +35,7 @@
 			
             // deleteStatement, you guess it! Deletes an admin account of input id
             $this->deleteStatement = $mysqli->prepare("DELETE FROM " . CatalogConnector::$TABLE_NAME . " WHERE `" . CatalogConnector::$COLUMN_ID . "` = ?");
+		}
 		
 		public function create($name, $stock, $price, $supplier) {
 			$this->createStatement->bind_param("ssds", $name, $stock, $price, $supplier);
