@@ -46,15 +46,23 @@
 		}
 	</style>
 	<?php require_once 'nav.php' ?>
-	<div class="container" style="margin-top: 2%">
+	<div class="container-fluid" style="margin-top: 2%">
+		<div class="row">
+			<div class="col-md-8">
+				<h1>Total line items: <span id="txtItems"></span></h1>
+			</div>
+			<div class="col-md-4">
+				<button id="btnAddItem"><i class="fa fa-plus"></i> Add item</button>
+			</div>
+		</div>
 		<table class="table" style="margin-top: 2vh">
 			<colgroup>
 				<col span="1" style="width: 5%;">
 				<col span="1" style="width: 10%;">
 				<col span="1" style="width: 30%;">
 				<col span="1" style="width: 10%;">
-				<col span="1" style="width: 20%;">
-				<col span="1" style="width: 20%;">
+				<col span="1" style="width: 10%;">
+				<col span="1" style="width: 30%;">
 				<col span="1" style="width: 5%;">
 			</colgroup>
 			<thead>
@@ -65,7 +73,7 @@
 					<th>Stock</th>
 					<th>Price</th>
 					<th>Supplier</th>
-					<th><i class="fas fa-eye"></i></th>
+					<th><i class="fa fa-pencil"></i></th>
 				</tr>
 			</thead>
 			<tbody id="tblItems">
@@ -96,7 +104,7 @@
 						tblItems += "<td>" + response.items[i].stock + "</td>";
 						tblItems += "<td>$" + response.items[i].price + "</td>";
 						tblItems += "<td>" + response.items[i].supplier + "</td>";
-						tblItems += "<td><i class=\"fas fa-pencil\"></i></td>";
+						tblItems += "<td><i class=\"fa fa-pencil\"></i></td>";
 						tblItems += "</tr>";
 					}
 					
