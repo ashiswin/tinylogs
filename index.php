@@ -42,7 +42,7 @@
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<a class="navbar-brand" href="/"><img src="../img/prowiz-transparent.png" height="30" /></a>
+		<a class="navbar-brand" href="/">TinyLogs</a>
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
@@ -59,7 +59,7 @@
 				  	<div class="card-block"> <!-- Create panel content -->
 						<h4 class="card-title">Please sign in to Tinylogs</h4>
 						<!-- Create login form -->
-					    	<form accept-charset="UTF-8" role="form" id="loginform" method="post" action="manage-about.php">
+					    	<form accept-charset="UTF-8" role="form" id="loginform" method="post" action="dashboard.php">
 							<!-- Create form elements -->
 				    			<fieldset>
 						    	  	<div class="form-group">
