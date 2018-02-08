@@ -49,10 +49,10 @@
 	<div class="container-fluid" style="margin-top: 2%">
 		<div class="row">
 			<div class="col-md-8">
-				<h1>Total line items: <span id="txtItems"></span></h1>
+				<h1>Total line items: </h1><span id="txtItems"></span>
 			</div>
 			<div class="col-md-4">
-				<button id="btnAddItem" class="btn btn-primary"><i class="fa fa-plus"></i> Add item</button>
+				<button id="btnAddItem" class="btn btn-primary float-right"><i class="fa fa-plus"></i> Add item</button>
 			</div>
 		</div>
 		<table class="table" style="margin-top: 2vh">
