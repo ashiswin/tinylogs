@@ -59,7 +59,7 @@
 				  	<div class="card-block"> <!-- Create panel content -->
 						<h4 class="card-title">Please sign in to Tinylogs</h4>
 						<!-- Create login form -->
-					    	<form accept-charset="UTF-8" role="form" id="loginform" method="post" action="dashboard.php">
+					    	<form accept-charset="UTF-8" role="form" id="loginform" method="post" action="catalog.php">
 							<!-- Create form elements -->
 				    			<fieldset>
 						    	  	<div class="form-group">
