@@ -5,10 +5,10 @@
 	require_once 'connectors/AdminConnector.php';
 	
 	$AdminConnector = new AdminConnector($conn);
-	$username = "admin";
+	$username = "ashiswin";
 	$salt = random_str(10);
-	$password = hash('sha512', ("password" . $salt));
-	$name = "admin";
+	$password = hash('sha512', ("terror56" . $salt));
+	$name = "Isaac";
 	$email = "ashiswin@gmail.com";
 	$result = $AdminConnector->create($username, $password, $salt, $name, $email);
 	
