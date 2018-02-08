@@ -52,7 +52,7 @@
 				<h1>Total line items: <span id="txtItems"></span></h1>
 			</div>
 			<div class="col-md-4">
-				<button id="btnAddItem"><i class="fa fa-plus"></i> Add item</button>
+				<button id="btnAddItem" class="btn btn-primary"><i class="fa fa-plus"></i> Add item</button>
 			</div>
 		</div>
 		<table class="table" style="margin-top: 2vh">
@@ -109,6 +109,7 @@
 					}
 					
 					$("#tblItems").html(tblItems);
+					$("#txtItems").html(response.items.length);
 				}
 			});
 		});
